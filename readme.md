@@ -12,13 +12,19 @@ This is a Flask-based API for managing user registration, login, expenses, and b
 #### Download a balance sheet in CSV format
 #### Secure API endpoints with JWT
 
+## FILE SYSTEM
+
+Here,
+app -- folder consists of database, auth, routes 
+check -- folder consists of checking module working conditions, generating the secret key
+test -- folder consists of testing curl script just for reference
 
 ## Installation
 
 #### Clone Repository
 
 ```bash
-git clone https://github.com/your-/expense-tracker-api.git
+git clone https://github.com/saiguptha2003/DailyExpensessharing_API.git
 cd DailyExpensessharing_API
 ```
 
