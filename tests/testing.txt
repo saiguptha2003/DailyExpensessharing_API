@@ -1,0 +1,39 @@
+curl -X POST http://127.0.0.1:5000/users \
+-H "Content-Type: application/json" \
+-d '{
+  "name": "V D Panduranga Sai Guptha",
+  "email": "saiguptha2003@gmail.com",
+  "mobile": "8688670712",
+  "password": "assessment"
+}'
+
+curl -X POST http://127.0.0.1:5000/login \
+-H "Content-Type: application/json" \
+-d '{
+  "email": "saiguptha2003@gmail.com",
+  "password": "assessment"
+}'
+
+curl -X GET http://127.0.0.1:5000/users/1 \
+-H "Authorization: Bearer <your-jwt-token>"
+
+
+curl -X POST http://127.0.0.1:5000/expenses \
+-H "Authorization: Bearer <your-jwt-token>" \
+-H "Content-Type: application/json" \
+-d '{
+  "description": "Dinner",
+  "amount": 100,
+  "split_type": "equal",
+  "participants": ["user1", "user2"]
+}'
+
+curl -X GET http://127.0.0.1:5000/expenses/1 \
+-H "Authorization: Bearer <your-jwt-token>"
+
+curl -X GET http://127.0.0.1:5000/expenses \
+-H "Authorization: Bearer <your-jwt-token>"
+
+curl -X GET http://127.0.0.1:5000/balance-sheet/download/1 \
+-H "Authorization: Bearer <your-jwt-token>" \
+--output balanceSheet1.csv

@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+app/__pycache__/
+expenseCompiler/
+.vscode/
+*.sqlite3
+expenses.db
+*.csv
+*.json
+
