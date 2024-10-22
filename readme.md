@@ -15,9 +15,9 @@ This is a Flask-based API for managing user registration, login, expenses, and b
 ## FILE SYSTEM
 
 Here,
-app -- folder consists of database, auth, routes 
-check -- folder consists of checking module working conditions, generating the secret key
-test -- folder consists of testing curl script just for reference
+### app -- folder consists of database, auth, routes 
+### check -- folder consists of checking module working conditions, generating the secret key
+### test -- folder consists of testing curl script just for reference
 
 ## Installation
 
