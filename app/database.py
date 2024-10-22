@@ -2,7 +2,7 @@ import sqlite3
 import hashlib
 import json
 from datetime import datetime
-
+# init_db should be executed before the start of application safe process 
 def init_db():
     conn = sqlite3.connect('expenses.db')
     cursor = conn.cursor()
